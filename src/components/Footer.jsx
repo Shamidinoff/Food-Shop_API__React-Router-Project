@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom"
+
 function Footer() {
     return (
 
-        <footer className="page-footer blue lighten-2">
+        <footer className="page-footer orange lighten-2">
             <div className="footer-copyright">
                 <div className="container">
                     © {new Date().getFullYear()} Copyright Text
-                    <a className="grey-text text-lighten-4 right" href="#!">Repo</a>
+                    <Link className="grey-text text-lighten-4 right" to="/contacts">Contacts</Link>
                 </div>
             </div>
         </footer>
