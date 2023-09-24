@@ -6,7 +6,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
-import { Movie } from "./components/Movie";
+import { Category } from "./pages/Category";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contact />} />
-            <Route path="/movie" element={<Movie />} />
+            <Route path="/category/:name" element={<Category />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
