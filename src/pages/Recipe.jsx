@@ -52,7 +52,7 @@ function Recipe(props) {
 
                 {recipe.strYoutube ? (
                     <div className="row">
-                        <h5>Video Recipe</h5>
+                        <h5 style={{ margin: '2rem 0 1.5rem' }}>Video Recipe</h5>
                         <iframe title={id} src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}`} />
                     </div>
 
