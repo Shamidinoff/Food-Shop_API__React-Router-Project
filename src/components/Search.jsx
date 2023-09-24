@@ -1,15 +1,15 @@
 import { useState } from "react"
 
-function Search(cb = Function.prototype) {
+function Search({ cb = Function.prototype }) {
     const [value, setValue] = useState('');
 
     const handleKey = (e) => {
-        if (e.key === 'enter') {
+        if (e.key === 'Enter') {
             handleSubmit();
         }
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = () => {
         cb(value);
     }
 
