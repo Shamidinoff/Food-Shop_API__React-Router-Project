@@ -36,6 +36,8 @@ function Home() {
         });
     }, [search]);
 
+    // .
+
     return <>
         <Search cb={handleSearch} />
         {!catalog.length ? <Preloader /> : (
